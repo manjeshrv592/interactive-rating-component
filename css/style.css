@@ -1,0 +1,245 @@
+/***********************************/
+/* Custom Properties */
+:root {
+  /* Fonts */
+  --body-font: 'Overpass', sans-serif;
+  --body-font-size: 1.4rem;
+  --body-font-weight: 400;
+
+  /* Colors */
+  --white: #fff;
+  --dark-blue: #262e38;
+  --very-dark-blue: #131518;
+  --light-grey: #969fad;
+  --medium-grey: #7c8798;
+  --orange: #fc7614;
+  --black-gradient: radial-gradient(#232a34, #181e27);
+}
+
+/***********************************/
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
+  line-height: 2.2rem;
+}
+
+img {
+  width: 100%;
+  display: inline-block;
+}
+
+/***********************************/
+/* Typography */
+
+/* Headings */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 2.4rem;
+}
+
+/***********************************/
+/* Main Layout */
+
+/* Container */
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.card {
+  padding: 2.4rem;
+  padding-bottom: 3.2rem;
+  background-image: var(--black-gradient);
+  width: 100%;
+  height: 36rem;
+  max-width: 32.7rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.star {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star img {
+  width: 1.4rem;
+}
+
+/* Rating List */
+.rating-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-item {
+}
+
+.rating-btn {
+  border: none;
+  width: 4.2rem;
+  height: 4.2rem;
+  border-radius: 50%;
+  color: var(--medium-grey);
+  background-color: var(--dark-blue);
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: inherit;
+  padding-top: 5px;
+}
+
+.rating-btn:hover {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
+.rating-btn.selected {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.feedback-img {
+  width: 14.4rem;
+}
+
+.feedback-text {
+  color: orange;
+  background-color: var(--dark-blue);
+  line-height: 1;
+  padding: 0.6rem 1.6rem;
+  padding-top: 1.2rem;
+  border-radius: 10rem;
+  display: inline-block;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.87px;
+  padding: 1.2rem 2.4rem;
+  padding-top: 1.5rem;
+  border-radius: 10rem;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-primary {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.btn-primary:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+/***********************************/
+/* Util Classes */
+
+/* Margins */
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 1.6rem;
+}
+
+.mb-lg {
+  margin-bottom: 2.4rem;
+}
+
+.mt-sm {
+  margin-top: 1rem;
+}
+
+.mt-md {
+  margin-top: 1.6rem;
+}
+
+.mt-lg {
+  margin-top: 2.4rem;
+}
+
+/* Text colors */
+.text-white {
+  color: var(--white);
+}
+
+/* Width */
+.w-100 {
+  width: 100%;
+}
+
+/* Display */
+.d-none {
+  display: none;
+}
+
+/* Text align */
+.text-center {
+  text-align: center;
+}
+
+/**************************************/
+/* Responsive styling */
+/**************************************/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
