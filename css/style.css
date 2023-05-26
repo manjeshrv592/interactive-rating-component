@@ -234,6 +234,47 @@ img {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+
+  .h2 {
+    font-size: 2.8rem;
+  }
+  .card {
+    padding: 3.2rem;
+    max-width: 41.2rem;
+    height: 41.6rem;
+    border-radius: 3rem;
+  }
+
+  .star {
+    height: 4.8rem;
+    width: 4.8rem;
+    margin-bottom: 4rem;
+  }
+
+  .star img {
+    width: 1.6rem;
+  }
+
+  .rating-list {
+    margin-bottom: 4rem;
+  }
+
+  .rating-btn {
+    height: 5.1rem;
+    width: 5.1rem;
+    font-size: 1.6rem;
+  }
+
+  .feedback-img {
+    width: 16.2rem;
+  }
+
+  .feedback-text {
+    margin-bottom: 4rem;
+  }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
